@@ -1,0 +1,22 @@
+{
+  "request": {
+    "slice": [
+      {
+        "origin": "AMD",
+        "destination": "SIN",
+        "date": "2017-12-25"
+      }
+    ],
+    "passengers": {
+      "adultCount": 1,
+      "infantInLapCount": 0,
+      "infantInSeatCount": 0,
+      "childCount": 0,
+      "seniorCount": 0
+    },
+    "solutions": 20,
+    "refundable": false
+  }
+}
+
+curl -d @request.json --header "Content-Type: application/json" https://www.googleapis.com/qpxExpress/v1/trips/search?key=AIzaSyAsT-ou5R4018gtAoH1oCKXQrvNGZSuj4I
